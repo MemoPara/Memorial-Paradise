@@ -1,0 +1,56 @@
+body{
+  font-family: times new Roman;
+ background-image: url('../GRAPHICS/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  color: white;
+}
+a,.nav-link{ color: white;font-weight: bold ;font-style: italic;}
+a:hover,
+.nav-link:hover ,
+.nav-item:hover { font-weight: bold; color: yellow; }
+.scriptBasic {
+  font: 400 50px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.c{ background-color: transparent;}
+.nav-item{ color:white; font-style: italic;}
+.nav-item:hover{color:white;}
+.mfont{ font-family:Impact, fantasy; font-style: italic; font-weight: 100;}
+.hfont{font-family: Snell Roundhand, cursive;}
+.sfont{ font-size: 4vw; font-weight:  bold;  font-family: sans-serif ; }
+.mtitle{font-size: 3vw;font-weight:  bold;  font-family: sans-serif ; font-style: italic; text-transform: uppercase;}
+.minner{font-size: 20px;font-weight:  bold;  font-family: sans-serif ;}
+.minner2{font-size: 25px;font-weight:  bold;  font-family: sans-serif ;}
+.minner3{font-size: 25px;  font-family: sans-serif ;}
+.bton { border: none; border-radius: 10px; min-width: 50px;max-width: auto;
+        background-image: linear-gradient(to bottom, #f0f0f3 0%, #393185 50%); 
+        color: #FFDE59; font-size: 3vw; min-height: 20px; font-weight: bold;  }
+.bton2 { border: none; border-radius: 10px; min-width: 20%;
+        background-image: linear-gradient(to bottom, #f0f0f3 0%, #393185 50%); 
+        color: #FFDE59; font-size: 2vw; min-height: 20px; font-weight: bold;  }
+input {font-size: 20px;}
+.avail {background-color: blue;}
+.notavail{background-color: red;}
+#chart{background-color: transparent;}
+.chart-container {
+  background-color: transparent;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+@media screen and (min-width: 601px) {
+  div.minner {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.minner {
+    font-size: 10px;
+  }
+}

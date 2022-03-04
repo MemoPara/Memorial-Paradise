@@ -14,7 +14,7 @@
     <link href="Inc/style.css" rel="stylesheet">
 
 
-    <title>Land Information</title>
+    <title>Home</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm c">
@@ -63,41 +63,54 @@
                 <hr class="d-sm-none">
             </div>
             <div class="col-md-10 ">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div style="text-align:center; width: 100%; margin-left: auto; margin-right: auto;">
-                            <br>
-                            <div class="minner2">Buy Land</div><br>
-                            <img src="GRAPHICS/10.png" width="400px" height="400px">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div style=" width: 100%; margin-left: auto; margin-right: auto;">
-                            <br>
-                            <div class="minner2">Diamond Land 54 / 120 are sold</div><br>
-                            <div class="minner3">
-                                Land Size : 10km<br>
-                                Price : 25,000,000 MEPA<br>
-                                Management Fee : 0<br>
-                                Storage : 10TB guarantee<br>
-                                Allocation : 200 MEPAG (governance
-                                token) + future 100 stocks and dividend<br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                 <label class="menufont ">Play</label>  <br>
+                                <a href="#" class="menulink"> <img src="GRAPHICS/10.png" width="40%"></a>
                             </div>
                         </div>
-                        <br>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <label class="menufont">Buy</label> <br>
+                              <a href="#" class="menulink">  <img src="GRAPHICS/11.png" width="40%"> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <label class="menufont">Upload</label>  <br>
+                               <a href="#" class="menulink"> <img src="GRAPHICS/12.png" width="40%"> </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <br>
                 <div class="row">
-                    <div class="col-md-12" >
-
-                        <div id="chartContainer" style="height: 500px; width:50%;margin:auto;"  ></div>
-
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                 <label class="menufont ">Avatar</label>   <br>
+                               <a href="#" class="menulink"> <img src="GRAPHICS/13.png" width="40%"> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center"> 
+                                <label class="menufont">Invite</label> <br>
+                               <a href="#" class="menulink"> <img src="GRAPHICS/14.png" width="40%"> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <label class="menufont">Organize Event</label>  <br>
+                              <a href="#" class="menulink">  <img src="GRAPHICS/15.png" width="40%"> </a>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                            <div class="text-center">
+                                <label class="menufont">Appointment</label>  <br>
+                              <a href="#" class="menulink">  <img src="GRAPHICS/17.png" width="40%"> </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <br><br>
+                <br>
             </div>
-        </div>
     </div>
     </div>
 
@@ -246,34 +259,6 @@
     <!-- End of .container -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script>
-        window.onload = function () {
 
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                title: {
-                    text: "List of Lands"
-                },
-              
-                data: [{
-                    type: "pie",
-                    startAngle: 240,
-                    yValueFormatString: "##0.00\"%\"",
-                    indexLabel: "{label} {y}",
-                    dataPoints: [
-                        { y: 1, label: "D1 Occupied", color: "red" },
-                        { y: 1, label: "D2 Available", color: "blue" },
-                        { y: 1, label: "D3 Occupied", color: "red"},
-                        { y: 1, label: "D4 Available", color: "blue" },
-                        { y: 1, label: "D5 Occupied", color: "red" },
-                        { y: 1, label: "D6 Available", color: "blue"}
-                    ]
-                }]
-            });
-            chart.render();
-
-        }
-    </script>
 </body>
 </html>

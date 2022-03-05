@@ -66,9 +66,7 @@ a:hover,
     background: rgba(173, 121, 186, 0.8);
     padding: 20px;
 }
-.active {
-    color: yellow;
-}
+
 .date{font-size:18px;}
 .files{font-size:15px;}
 #search {
@@ -88,6 +86,11 @@ a:hover,
     background: rgba(130, 55, 128, 0.7);
     border: none;
     color: white;
+}
+#btnpub {
+    background-color: #FFDE59;
+    font-weight: bold;
+    padding: 5px;
 }
     .customb:focus {
         background: rgba(130, 55, 128, 0.7);
@@ -132,6 +135,16 @@ a:hover,
     border-radius: 5px;
     min-width: 20%;
     background-color: #5C6BC0;
+    color: white;
+    font-size: 25px;
+    min-height: 20px;
+    font-weight: bold;
+}
+.btonw22 {
+    border: none;
+    border-radius: 5px;
+    min-width: 20%;
+    background-color: #86D2E3;
     color: white;
     font-size: 25px;
     min-height: 20px;

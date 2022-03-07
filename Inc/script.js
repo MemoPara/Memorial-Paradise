@@ -23,25 +23,38 @@ function fees() {
         document.getElementById('fee2').style.display = "none";
     }
 }
-window.onload = function () {
-    
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "List of Lands"
-        },
 
-        data: [{
-            type: "pie",
-            startAngle: 240,
-            yValueFormatString: "##0.00\"%\"",
-            indexLabel: "{label} {y}",
-            dataPoints: [
-                { y: 1, label: "D1 Occupied", color: "red" },
-                 { y: 1, label: "D2 Occupied", color: "red" }
-            ]
-        }]
-    });
-    chart.render();
-
+const lands = [];
+const d = [];
+const col = [];
+for (var i = 1; i <= 120; i++) {
+    lands.push("D" + i + " Available");
+    d.push(1);
+    col.push("blue");
+    i++;
+    lands.push("D" + i + " Occupied");
+    d.push(1);
+    col.push("red");
 }
+
+var xValues = lands;
+var yValues = d;
+var barColors = col;
+
+new Chart("myChart", {
+    type: "doughnut",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: "Lands"
+        },
+        legend: { display: false }
+    }
+});

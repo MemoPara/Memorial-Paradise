@@ -14,6 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
     <link href="http://fonts.cdnfonts.com/css/space-quest" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link href="Inc/style.css" rel="stylesheet">
 
 
@@ -102,39 +103,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div >
+                        <div>
                             <img src="GRAPHICS/Transaction.png" style="float:left; margin-left:20px;" />
                             <div style="float: left;">
                                 <a href="#">Transaction History</a><br>
                             </div>
                         </div>
                     </div>
-                        <div class="col-md-6">
-                            <div style=" width: 100%; margin-left: auto; margin-right: auto;">
-                                <br>
-                                <div class="minner2">Diamond Land 54 / 120 are sold</div><br>
-                                <div class="minner3" style="font-family:'Times New Roman';">
-                                    Land Size : 10km<br>
-                                    Price : 25,000,000 MEPA<br>
-                                    Management Fee : 0<br>
-                                    Storage : 10TB guarantee<br>
-                                    Allocation : 200 MEPAG (governance
-                                    token) + future 100 stocks and dividend<br>
-                                </div>
-                            </div>
+                    <div class="col-md-6">
+                        <div style=" width: 100%; margin-left: auto; margin-right: auto;">
                             <br>
+                            <div class="minner2">Diamond Land 54 / 120 are sold</div><br>
+                            <div class="minner3" style="font-family:'Times New Roman';">
+                                Land Size : 10km<br>
+                                Price : 25,000,000 MEPA<br>
+                                Management Fee : 0<br>
+                                Storage : 10TB guarantee<br>
+                                Allocation : 200 MEPAG (governance
+                                token) + future 100 stocks and dividend<br>
+                            </div>
                         </div>
+                        <br>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-10">
-
-                            <div id="chartContainer" style="height: 500px; width:50%;margin:auto;"></div>
-
-                        </div>
-                    </div>
-                    <br><br>
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div>
+                            <canvas id="myChart" style="width:100%; margin:auto"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br>
+            </div>
         </div>
     </div>
     </div>
@@ -284,7 +287,44 @@
     <!-- End of .container -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  
+    <script type="text/javascript">
+        const lands = [];
+        const d = [];
+        const col = [];
+        for (var i = 1; i <= 120; i++) {
+            lands.push("D" + i + " Available");
+            d.push(1);
+            col.push("blue");
+            i++;
+            lands.push("D" + i + " Occupied");
+            d.push(1);
+            col.push("red");
+        }
+
+        var xValues = lands;
+        var yValues = d;
+        var barColors = col;
+        Chart.defaults.global.defaultFontColor = 'white';
+        Chart.defaults.global.defaultFontSize = 25;
+        new Chart("myChart", {
+            type: "doughnut",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Lands",
+
+                },
+                legend: { display: false }
+            }
+        });
+    </script>
+
 </body>
 </html>

@@ -24,7 +24,7 @@ function fees() {
     }
 }
 window.onload = function () {
-
+    
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
         title: {
@@ -38,11 +38,7 @@ window.onload = function () {
             indexLabel: "{label} {y}",
             dataPoints: [
                 { y: 1, label: "D1 Occupied", color: "red" },
-                { y: 1, label: "D2 Available", color: "blue" },
-                { y: 1, label: "D3 Occupied", color: "red" },
-                { y: 1, label: "D4 Available", color: "blue" },
-                { y: 1, label: "D5 Occupied", color: "red" },
-                { y: 1, label: "D6 Available", color: "blue" }
+                 { y: 1, label: "D2 Occupied", color: "red" }
             ]
         }]
     });

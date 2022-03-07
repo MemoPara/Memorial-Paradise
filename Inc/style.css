@@ -1,40 +1,69 @@
 body{
-  font-family: times new Roman;
+  font-family: 'Anton';
  background-image: url('../GRAPHICS/back.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   color: white;
+
 }
-a{color:white; text-decoration:none;}
-.nav-link{ color: white;font-weight: bold ;font-style: italic;}
+@import url('http://fonts.cdnfonts.com/css/space-quest');
+a {
+    color: white;
+    text-decoration: none;
+   
+}
+.nav-link {
+    color: white;
+
+    font-style: italic;
+    font-family: 'Space Quest', sans-serif;
+}
 a:hover,
 .nav-link:hover ,
 .nav-item:hover {  color: yellow; }
 .scriptBasic {
+    f
   font: 400 50px/0.8 'Great Vibes', Helvetica, sans-serif;
   color: #fff;
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
-.c{ background-color: transparent;}
+.c {
+    background-color: transparent;
+    font-family: 'Space Quest', sans-serif;
+}
 .nav-item{ color:white; font-style: italic;}
 .nav-item:hover{color:white;}
 .mfont{ font-family:Impact, fantasy; font-style: italic; font-weight: 100;}
 .hfont{font-family: Snell Roundhand, cursive;}
 .sfont{ font-size: 4vw; font-weight:  bold;  font-family: sans-serif ; }
-.mtitle{font-size: 3vw;font-weight:  bold;  font-family: sans-serif ; font-style: italic; text-transform: uppercase;}
-.minner{font-size: 20px;font-weight:  bold;  font-family: sans-serif ;}
-.minner2{font-size: 25px;font-weight:  bold;  font-family: sans-serif ;}
-.minner3{font-size: 25px;  font-family: sans-serif ;}
+.mtitle {
+    font-size: 3vw;
+
+    font-family: 'Space Quest', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.minner{ font-family: 'Anton' ; }
+.minner2{font-size: 25px;  font-family: 'Anton' ;}
+.minner3{font-size: 25px;   }
 .terms {
     font-size: 20px;
     
 }
+.terms2 {
+    font-size: 15px; font-family:'Anton'; font-weight:normal;
+}
+.terms3 {
+    font-size: 18px;
+    font-family:'Times New Roman';
+    font-weight: normal;
+}
 .folder {
     border: 4px solid #7ED4C0;
 }
-.titl{font-size:20px; font-weight:bold;
+.titl{font-size:20px;
 }
 .listofitems {
     width: 100%;
@@ -65,15 +94,19 @@ a:hover,
 .avatar {
     background: rgba(173, 121, 186, 0.8);
     padding: 20px;
+    font-family:'Times New Roman';
 }
 
-.date{font-size:18px;}
-.files{font-size:15px;}
+.date{font-size:18px; font-family:'Times New Roman';}
+.files {
+    font-size: 15px;
+    font-family: 'Times New Roman';
+}
 #search {
     border: 3px solid #5CE1E6;
 }
 .flab {
-    background-color: #86D2E3; color:white; font-family:sans-serif; font-size:25px; font-weight:bold;
+    background-color: #86D2E3; color:white; font-family:'Anton'; font-size:25px; 
 }
 .event {
     background: rgba(130, 55, 128, 0.7);
@@ -107,19 +140,29 @@ a:hover,
 }
 .menufont {
     font-size: 3vw;
-    font-family: sans-serif;
+    font-family: 'Anton';
 }
-.tb{ border: none; background-color :transparent; color: white; font-size:20px; font-family:sans-serif; margin: 0px 5px 0px 5px;}
+.tb{ border: none; background-color :transparent; color: white; font-size:20px; font-family:'Anton'; margin: 0px 5px 0px 5px;}
 #trmsbox {
     box-shadow: 0px 0px 15px 1px white;
    
 }
-.bton { border: none; border-radius: 10px; min-width: 50px;max-width: auto;
-        background-image: linear-gradient(to bottom, #f0f0f3 0%, #393185 50%); 
-        color: #FFDE59; font-size: 3vw; min-height: 20px; font-weight: bold;  }
+.bton {
+    border: none;
+    border-radius: 10px;
+    min-width: 50px;
+    max-width: auto;
+    font-family: 'Anton';
+    background-image: linear-gradient(to bottom, #f0f0f3 0%, #393185 50%);
+    color: #FFDE59;
+    font-size: 3vw;
+    min-height: 20px;
+
+}
 .bton2 { border: none; border-radius: 10px; min-width: 20%;
+         font-family:'Anton';
         background-image: linear-gradient(to bottom, #f0f0f3 0%, #393185 50%); 
-        color: #FFDE59; font-size: 2vw; min-height: 20px; font-weight: bold;  }
+        color: #FFDE59; font-size: 2vw; min-height: 20px;   }
 .btonw {
     border: none;
     border-radius: 10px;
@@ -128,7 +171,8 @@ a:hover,
     color: white;
     font-size: 25px;
     min-height: 20px;
-    font-weight: bold;
+    font-family:'Anton';
+  
 }
 .btonw2 {
     border: none;
@@ -137,10 +181,12 @@ a:hover,
     background-color: #5C6BC0;
     color: white;
     font-size: 25px;
+    font-family:'Anton';
     min-height: 20px;
-    font-weight: bold;
+ 
 }
 .btonw22 {
+    font-family:'Anton';
     border: none;
     border-radius: 5px;
     min-width: 20%;
@@ -148,9 +194,9 @@ a:hover,
     color: white;
     font-size: 25px;
     min-height: 20px;
-    font-weight: bold;
+   
 }
-.menulink{ color:white; text-decoration :none; font-style:normal; font-weight:normal;}
+.menulink{ color:white; text-decoration :none; font-style:normal; font-family:'Anton'; }
 input {font-size: 20px;}
 .avail {background-color: blue;}
 .notavail{background-color: red;}

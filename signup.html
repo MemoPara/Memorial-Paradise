@@ -34,7 +34,7 @@
         <a class="nav-link display-4 hfont" href="index.html"><label class="scriptBasic"><img src="GRAPHICS/19.png" width="60px" height="60px"><img src="GRAPHICS/31.png"> </label></a>
       </li>
     </ul>
-        <a class=" nav-item nav-link d-flex " href="signin.html" style="margin-right: 100px;">SIGN IN</a>
+        <a class=" nav-item nav-link d-flex " href="connect-wallet.html" style="margin-right: 100px;">SIGN IN</a>
   </div>
 </nav>
 
@@ -46,7 +46,7 @@
                 <a class="nav-link " href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="connect-wallet.html">PLAY</a>
+                <a class="nav-link " href="home.html">PLAY</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="lands.html">MARKET</a>
@@ -55,7 +55,7 @@
                 <a class="nav-link " href="maps.html">MAP</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="events.html">Event</a>
+                <a class="nav-link " href="events.html">EVENT</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="mymp.html">MY MP</a>
@@ -67,23 +67,31 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;"><br>
-                    <div class="minner">What is your name? (display name in the game)</div><br>
-                    <input type="text" class="form-control form-control-lg"  >
-                </div>
-                <br>
-                <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;"><br>
-                    <div class="minner">What is your email?</div><br>
-                    <input type="email" class="form-control form-control-lg"  >
-                </div>
-                <br>
-                <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;"><br>
-                    <div class="minner">Please make a unique password 
-                        <a class="btn btn-primary btn-floating m-1" onmouseover="document.getElementById('info').style.display='block';" onmouseleave="document.getElementById('info').style.display='none';" style="background-color: #5CE1E6; margin-bottom: -5px;" href="#!" role="button"><i class="fas fa-info-circle"></i></a>    
+                <form action="signin.html"  >
+                    <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;">
+                        <br>
+                        <div class="minner">What is your name? (display name in the game)</div><br>
+                        <input type="text" class="form-control form-control-lg">
                     </div>
-                    <div id="info" style="color: #5CE1E6; display: none;">The password must: be between 8-35 characters in length contain both upper and lower case characters contain at least 1 number contain at least one of these special characters @ # $ % ^ & + = . _
+                    <br>
+                    <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;">
+                        <br>
+                        <div class="minner">What is your email?</div><br>
+                        <input type="email" class="form-control form-control-lg">
+                    </div>
+                    <br>
+                    <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto;">
+                        <br>
+                        <div class="minner">
+                            Please make a unique password
+                            <a class="btn btn-primary btn-floating m-1" onmouseover="document.getElementById('info').style.display='block';" onmouseleave="document.getElementById('info').style.display='none';" style="background-color: #5CE1E6; margin-bottom: -5px;" href="#!" role="button"><i class="fas fa-info-circle"></i></a>
+                        </div>
+                        <div id="info" style="color: #5CE1E6; display: none;">
+                            The password must: be between 8-35 characters in length contain both upper and lower case characters contain at least 1 number contain at least one of these special characters @ # $ % ^ & + = . _
                         </div><br>
-                    <input type="password" class="form-control form-control-lg"  >
+                        <input type="password" class="form-control form-control-lg">
+                        <br> <button type="submit" class="btonw">Signup</button>
+                </form>
                 </div>
             </div>
         </div>
